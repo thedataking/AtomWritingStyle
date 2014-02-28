@@ -1,0 +1,16 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      {
+        'label': 'Writing Style'
+        'submenu': [
+          {
+            'label': 'Toggle'
+            'command': 'writing-style:toggle'
+          }
+        ]
+      }
+    ]
+  }
+]
