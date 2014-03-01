@@ -6,7 +6,7 @@
         'label': 'Writing Style'
         'submenu': [
           {
-            'label': 'Toggle'
+            'label': 'Toggle',
             'command': 'writing-style:toggle'
           }
         ]

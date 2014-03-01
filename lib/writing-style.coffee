@@ -1,10 +1,15 @@
 module.exports =
   activate: (state) ->
-    print "hello, world!\n"
-    return
+    atom.workspaceView.command 'writing-style:toggle', '.editor', ->
+      editor = atom.workspaceView.getActivePaneItem()
+      toggle(editor)
+      #sortLines(editor)
+    console.log 'Writing Style Activated'
+
   deactivate: ->
     return
   serialize: ->
     return
-  toggle: ->
-    print 'toggled'
+
+toggle = (editor) ->
+  console.log 'Writing Style toggled!'
