@@ -1,0 +1,28 @@
+# see http://manual.macromates.com/en/language_grammars.html
+# dynamic grammars -> were avoken
+# http://discuss.atom.io/t/automatically-update-to-dynamic-grammar/10181
+'scopeName': 'text.writing-style'
+'name': 'Writing Style'
+'injectionSelector': 'comment, text.plain, text.tex'
+'patterns': [
+  {
+    'comment' : 'extra words to pay attention to'
+    'match': '(?<!\\w)which(?!\\w)|(?<!\\w)is(?!\\w)|(?<!\\w)are(?!\\w)|(?<!\\w)secondly(?!\\w)|(?<!\\w)whats(?!\\w)|(?<!\\w)further(?!\\w)'
+    'name': 'keyword.control.repeat.extra-words'
+  }
+  {
+    'comment' : 'weasel words'
+    'match': '(?<!\\w)many(?!\\w)|(?<!\\w)various(?!\\w)|(?<!\\w)very(?!\\w)|(?<!\\w)fairly(?!\\w)|(?<!\\w)several(?!\\w)|(?<!\\w)extremely(?!\\w)|(?<!\\w)exceedingly(?!\\w)|(?<!\\w)quite(?!\\w)|(?<!\\w)remarkably(?!\\w)|(?<!\\w)few(?!\\w)|(?<!\\w)surprisingly(?!\\w)|(?<!\\w)mostly(?!\\w)|(?<!\\w)largely(?!\\w)|(?<!\\w)huge(?!\\w)|(?<!\\w)tiny(?!\\w)|(?<!\\w)are a number(?!\\w)|(?<!\\w)is a number(?!\\w)|(?<!\\w)excellent(?!\\w)|(?<!\\w)interestingly(?!\\w)|(?<!\\w)significantly(?!\\w)|(?<!\\w)substantially(?!\\w)|(?<!\\w)clearly(?!\\w)|(?<!\\w)vast(?!\\w)|(?<!\\w)relatively(?!\\w)|(?<!\\w)completely(?!\\w)|(?<!\\w)literally(?!\\w)|(?<!\\w)not rocket science(?!\\w)|(?<!\\w)outside the box(?!\\w)'
+    'name': 'storage.type.class.weazel-words'
+  }
+  {
+    'comment' : 'passive voice'
+    'match' : '(?<!\\w)(am|are|were|being|is|been|was|be)\\s+(\\w+ed|awoken|been|born|beat|become|begun|bent|beset|bet|bid|bidden|bound|bitten|bled|blown|broken|bred|brought|broadcast|built|burnt|burst|bought|cast|caught|chosen|clung|come|cost|crept|cut|dealt|dug|dived|done|drawn|dreamt|driven|drunk|eaten|fallen|fed|felt|fought|found|fit|fled|flung|flown|forbidden|forgotten|foregone|forgiven|forsaken|frozen|gotten|given|gone|ground|grown|hung|heard|hidden|hit|held|hurt|kept|knelt|knit|known|laid|led|leapt|learnt|left|lent|let|lain|lighted|lost|made|meant|met|misspelt|mistaken|mown|overcome|overdone|overtaken|overthrown|paid|pled|proven|put|quit|read|rid|ridden|rung|risen|run|sawn|said|seen|sought|sold|sent|set|sewn|shaken|shaven|shorn|shed|shone|shod|shot|shown|shrunk|shut|sung|sunk|sat|slept|slain|slid|slung|slit|smitten|sown|spoken|sped|spent|spilt|spun|spit|split|spread|sprung|stood|stolen|stuck|stung|stunk|stridden|struck|strung|striven|sworn|swept|swollen|swum|swung|taken|taught|torn|told|thought|thrived|thrown|thrust|trodden|understood|upheld|upset|woken|worn|woven|wed|wept|wound|won|withheld|withstood|wrung|written)(?!\\w)'
+    'name': 'storage.type.class.passive-voice'
+  }
+  {
+    'comment' : 'duplicate words'
+    'match' : '\\b(\\w+)\\s\\1\\b'
+    'name': 'storage.type.class.todo'
+  }
+]

@@ -13,7 +13,8 @@
   ],
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": "*",
+    "node": "*"
   },
   "dependencies": {},
   "readme": "# writing-style package\n\nImprove your writing style. Highlights passive voice and weazel words.\n",
