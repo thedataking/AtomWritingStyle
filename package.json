@@ -4,10 +4,7 @@
   "version": "0.1.1",
   "private": true,
   "description": "Improve your writing style. Highlights passive voice and weazel words.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thedataking/writing-style"
-  },
+  "repository": "https://github.com/thedataking/writing-style",
   "activationCommands": {
     "atom-text-editor": ["writing-style:toggle"]
   },
